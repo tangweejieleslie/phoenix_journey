@@ -10,6 +10,7 @@ extends Node2D
 func _ready():
 	var image = load("res://Battle/sample_resources/monster_design_1.png")
 	$GridContainer/UnitPlaceholder/TextureButton.texture_normal = image
+	# FocusFirstUnit()
 	pass # Replace with function body.
 
 func DisableAll():
@@ -22,6 +23,15 @@ func EnableAll():
 		child.get_node("TextureButton").disabled = false	
 		child.get_node("TextureButton").focus_mode =Control.FOCUS_ALL
 
+func FocusFirstUnit():
+	$GridContainer/UnitPlaceholder/TextureButton.grab_focus()
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_TextureButton_pressed():
+	print("Selected!!!")
+	
+	pass # Replace with function body.
