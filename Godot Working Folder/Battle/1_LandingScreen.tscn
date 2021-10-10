@@ -1,6 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Battle/2_TargetSelectionScene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Battle/1_LandingScreen.gd" type="Script" id=2]
 
 [node name="BattleScene" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="Order" type="Button" parent="."]
 margin_left = 32.6838
@@ -22,3 +26,9 @@ text = "Fight"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Ally" parent="." instance=ExtResource( 1 )]
+position = Vector2( 240.688, 22.653 )
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+position = Vector2( 765.482, 22.653 )

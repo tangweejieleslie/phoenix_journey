@@ -1,3 +1,52 @@
 [gd_scene format=2]
 
 [node name="SkillSelection" type="Node2D"]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_right = 312.0
+margin_bottom = 164.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skill Placeholder" type="Button" parent="GridContainer"]
+margin_right = 312.0
+margin_bottom = 20.0
+text = "Skill Name ABC"
+
+[node name="Skill Placeholder2" type="Button" parent="GridContainer"]
+margin_top = 24.0
+margin_right = 312.0
+margin_bottom = 44.0
+text = "Skill Name ABC"
+
+[node name="Skill Placeholder3" type="Button" parent="GridContainer"]
+margin_top = 48.0
+margin_right = 312.0
+margin_bottom = 68.0
+text = "longer skill name should make the rest expand"
+
+[node name="Skill Placeholder4" type="Button" parent="GridContainer"]
+margin_top = 72.0
+margin_right = 312.0
+margin_bottom = 92.0
+text = "Skill Name ABC"
+
+[node name="Skill Placeholder5" type="Button" parent="GridContainer"]
+margin_top = 96.0
+margin_right = 312.0
+margin_bottom = 116.0
+text = "Skill Name ABC"
+
+[node name="Skill Placeholder6" type="Button" parent="GridContainer"]
+margin_top = 120.0
+margin_right = 312.0
+margin_bottom = 140.0
+text = "Skill Name ABC"
+
+[node name="Skill Placeholder7" type="Button" parent="GridContainer"]
+margin_top = 144.0
+margin_right = 312.0
+margin_bottom = 164.0
+text = "Skill Name ABC"
