@@ -33,5 +33,5 @@ func FocusFirstUnit():
 
 func _on_TextureButton_pressed():
 	print("Selected!!!")
-	
+	$GridContainer/UnitPlaceholder/SkillSelection.visible = true
 	pass # Replace with function body.
