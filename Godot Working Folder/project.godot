@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "LandingScreen",
+"language": "GDScript",
+"path": "res://Battle/1_LandingScreen.gd"
+} ]
+_global_script_class_icons={
+"LandingScreen": ""
+}
+
 [application]
 
 config/name="C:\\Users\\65909\\Documents\\Github\\phoenix_journey"

@@ -1,17 +1,20 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var image = load("res://Battle/sample_resources/monster_design_1.png")
-	$GridContainer/UnitPlaceholder/TextureButton.texture_normal = image
 	# FocusFirstUnit()
 	pass # Replace with function body.
+
+func initUnits(Units):
+	var UnitScene = preload("res://Battle/Unit_Placeholder.tscn")
+	
+	for unit in Units:
+		var UnitPlaceholder = UnitScene.instance()
+		# UnitScene.text = skill
+		# $GridContainer.add_child(SkillPlaceholder)
+		# var LandingScreen = get_tree().get_root()
+		# SkillPlaceholder.connect("SkillSelected", LandingScreen, "handleSkillSelection", [skill, "test"])
+
 
 func DisableAll():
 	for child in $GridContainer.get_children():
@@ -29,9 +32,3 @@ func FocusFirstUnit():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_TextureButton_pressed():
-	print("Selected!!!")
-	
-	pass # Replace with function body.
