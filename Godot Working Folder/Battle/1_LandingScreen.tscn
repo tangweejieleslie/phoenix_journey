@@ -1,0 +1,24 @@
+[gd_scene format=2]
+
+[node name="BattleScene" type="Node2D"]
+
+[node name="Order" type="Button" parent="."]
+margin_left = 32.6838
+margin_top = 22.7043
+margin_right = 180.684
+margin_bottom = 67.7043
+text = "Order"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fight" type="Button" parent="."]
+margin_left = 32.6838
+margin_top = 88.7755
+margin_right = 180.684
+margin_bottom = 133.775
+disabled = true
+text = "Fight"
+__meta__ = {
+"_edit_use_anchors_": false
+}
