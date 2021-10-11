@@ -29,6 +29,7 @@ signal Signal_SelectUnit(position)
 func _on_Unit_pressed():
 	print("Selected. Trigger Skills Selection")
 	print(self.rect_global_position)
-	var position = self.rect_global_position
+	
+	var position = $Center.rect_global_position # self.rect_global_position
 	emit_signal("Signal_SelectUnit", position )
 	pass # Replace with function body.

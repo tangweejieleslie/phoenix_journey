@@ -100,7 +100,6 @@ func DrawTargetLine():
 	print(start_id, "->", end_id)
 	
 	var newLine = Line2D.new()
-	newLine.draw_line(start_id, end_id, Color(255,255,255,1), 5) 
 	add_child(newLine)
 	newLine.add_point(start_id)
 	newLine.add_point(end_id)
