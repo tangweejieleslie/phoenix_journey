@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/selected_border.png-38b8af1d1be64a2b9b7dbebd54587a8e.stex"
+path="res://.import/selected_border_thicker.png-b9b4457c952043652bd551e61b1301a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Battle/sample_resources/selected_border.png"
-dest_files=[ "res://.import/selected_border.png-38b8af1d1be64a2b9b7dbebd54587a8e.stex" ]
+source_file="res://sample_resources/selected_border_thicker.png"
+dest_files=[ "res://.import/selected_border_thicker.png-b9b4457c952043652bd551e61b1301a3.stex" ]
 
 [params]
 

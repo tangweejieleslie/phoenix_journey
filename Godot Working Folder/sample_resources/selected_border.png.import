@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/monster_design_1.png-fd0eb0997dd43fd8fa5f739ba4d291da.stex"
+path="res://.import/selected_border.png-0da098677987a53f66a3007542af96c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Battle/sample_resources/monster_design_1.png"
-dest_files=[ "res://.import/monster_design_1.png-fd0eb0997dd43fd8fa5f739ba4d291da.stex" ]
+source_file="res://sample_resources/selected_border.png"
+dest_files=[ "res://.import/selected_border.png-0da098677987a53f66a3007542af96c1.stex" ]
 
 [params]
 
