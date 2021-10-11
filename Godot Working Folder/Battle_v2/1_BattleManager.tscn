@@ -33,4 +33,10 @@ margin_top = 7.0
 margin_right = 2334.0
 margin_bottom = 2155.0
 
+[node name="Enemies" parent="." instance=ExtResource( 1 )]
+margin_left = 563.0
+margin_top = 7.0
+margin_right = 2711.0
+margin_bottom = 2155.0
+
 [connection signal="pressed" from="ActionMenu/Order" to="." method="_on_Order_pressed"]

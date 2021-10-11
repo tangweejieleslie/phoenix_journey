@@ -8,5 +8,6 @@ signal Signal_SelectSkill
 
 func _on_Skill_pressed():
 	print("SkillSelected")
+	
 	emit_signal("Signal_SelectSkill")
 
