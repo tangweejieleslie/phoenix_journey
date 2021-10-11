@@ -9,6 +9,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DisableAll()
+	HookSignalToAllies()
 	pass # Replace with function body.
 
 func DisableAll():
@@ -24,8 +25,15 @@ func EnableAll():
 func FocusFirstUnit():
 	$Allies/Unit.grab_focus()
 
+func HookSignalToAllies():
+	for unit in $Allies.get_children():
+		unit.connect("Signal_SelectUnit", self, "UnitSelected")
+
 
 func _on_Order_pressed():
 	EnableAll()
 	FocusFirstUnit()
 	pass # Replace with function body.
+
+func UnitSelected():
+	print("Unit selected")

@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="C:\\Users\\65909\\Documents\\Github\\phoenix_journey"
-run/main_scene="res://Battle/1_LandingScreen.tscn"
+run/main_scene="res://Battle_v2/1_BattleManager.tscn"
 config/icon="res://icon.png"
 
 [physics]

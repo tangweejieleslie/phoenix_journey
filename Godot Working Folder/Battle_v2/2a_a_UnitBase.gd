@@ -17,3 +17,10 @@ func InstantiateUnit():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+signal Signal_SelectUnit
+
+func _on_Unit_pressed():
+	print("Selected. Trigger Skills Selection")
+	emit_signal("Signal_SelectUnit")
+	pass # Replace with function body.
