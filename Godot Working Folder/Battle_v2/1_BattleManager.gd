@@ -1,11 +1,6 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
+var SkillSelectionPanelId
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	DisableAll()
@@ -37,3 +32,20 @@ func _on_Order_pressed():
 
 func UnitSelected():
 	print("Unit selected")
+	InstantiateSkillSelection()
+
+func InstantiateSkillSelection():
+	var SkillPanel = preload("res://Battle_v2/2b_SkillSelection.tscn")
+	var s = SkillPanel.instance()
+	s.set_position(Vector2(400,20))
+	add_child(s)
+	SkillSelectionPanelId = s.get_instance_id()
+	
+	for skill in s.get_children():
+		print(skill)
+		skill.connect("Signal_SelectSkill", self, "SkillSelected")
+
+func SkillSelected():
+	print("Skill is selected. Manager")
+	instance_from_id(SkillSelectionPanelId).queue_free()
+		
