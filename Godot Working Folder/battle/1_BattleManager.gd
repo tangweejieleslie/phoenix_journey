@@ -26,6 +26,7 @@ var data
 
 func _ready():
 	$Control.connect("unit_pressed", self, "handle")
+	LoadJson()
 	pass # Replace with function body.
 
 func handle(id):
@@ -35,3 +36,15 @@ func handle(id):
 
 #func _process(delta):
 #	pass
+
+func LoadJson():
+	var file = File.new()
+	var file_path = "res://data.json"
+	file.open(file_path, file.READ)
+	var json_string = file.get_as_text()
+
+	var json_result = JSON.parse(json_string).result
+	file.close()
+	
+	print(json_result)
+

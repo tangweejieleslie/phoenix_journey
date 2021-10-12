@@ -7,6 +7,8 @@ export var ATK = 10
 export var DEF = 5
 
 
+# All the getter and setter functions
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 # load image from monster_id

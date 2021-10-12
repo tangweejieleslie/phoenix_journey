@@ -1,0 +1,13 @@
+{
+    "allies":[
+      {
+        "name":"Monster 1",
+        "hp": 50
+      },
+      {
+        "name":"Monster 2",
+        "hp": 120
+      }
+    ]
+  }
+  
