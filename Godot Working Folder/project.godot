@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="C:\\Users\\65909\\Documents\\Github\\phoenix_journey"
-run/main_scene="res://Battle_v2/1_BattleManager.tscn"
+run/main_scene="res://battle/1_BattleManager.tscn"
 config/icon="res://icon.png"
 
 [physics]

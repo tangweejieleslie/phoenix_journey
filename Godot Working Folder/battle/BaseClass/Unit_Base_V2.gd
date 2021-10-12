@@ -1,5 +1,4 @@
-extends TextureButton
-
+extends Control
 var monster_id = 5
 
 const RESOURCE_PATH = "res://battle/BaseClass/Resources/"
@@ -22,16 +21,24 @@ func LoadImage(id):
 	
 	image.load(path)
 	texture.create_from_image(image)
-	self.texture_normal=texture
+	$MonsterContainer/Unit.texture_normal = texture
 	
 	
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	$MonsterContainer/Container/UnitStats/HP_value.text = str(HP)
 	pass
 #	pass
 
 
 func UpdateHP(newHp):
 	HP = newHp
-	$KeyStats/HP.text = str(HP)
+	$MonsterContainer/Container/UnitStats/HP_value.text = str(HP)
+
+
+signal unit_pressed(id)
+
+func _on_Unit_pressed():
+	emit_signal("unit_pressed", self.get_instance_id())
+	pass # Replace with function body.

@@ -25,7 +25,13 @@ var data
 
 
 func _ready():
+	$Control.connect("unit_pressed", self, "handle")
 	pass # Replace with function body.
+
+func handle(id):
+	print(id)
+	print("Unit pressed.")
+	instance_from_id(id).HP -= 10
 
 #func _process(delta):
 #	pass

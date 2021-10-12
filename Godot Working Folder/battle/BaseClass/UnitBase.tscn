@@ -9,3 +9,13 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="KeyStats" type="CanvasLayer" parent="."]
+
+[node name="HP" type="Label" parent="KeyStats"]
+anchor_right = 0.143555
+anchor_bottom = 0.0783333
+text = "50"
+__meta__ = {
+"_edit_use_anchors_": true
+}
