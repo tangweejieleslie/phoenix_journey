@@ -8,26 +8,11 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Node2D",
-"class": "LandingScreen",
-"language": "GDScript",
-"path": "res://Battle/1_LandingScreen.gd"
-} ]
-_global_script_class_icons={
-"LandingScreen": ""
-}
-
 [application]
 
 config/name="C:\\Users\\65909\\Documents\\Github\\phoenix_journey"
-run/main_scene="res://Battle_v2/1_BattleManager.tscn"
-config/icon="res://icon.png"
+run/main_scene="res://BattleManager.tscn"
 
 [physics]
 
 common/enable_pause_aware_picking=true
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"
