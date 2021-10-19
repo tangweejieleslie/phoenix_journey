@@ -4,7 +4,7 @@
 [ext_resource path="res://battle/BaseClass/Unit_Base_V2.gd" type="Script" id=2]
 [ext_resource path="res://battle/BaseClass/Resources/selection.png" type="Texture" id=3]
 
-[node name="Control" type="Control"]
+[node name="UnitRoot" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )

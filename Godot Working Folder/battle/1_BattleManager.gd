@@ -47,4 +47,4 @@ func LoadJson():
 	file.close()
 	
 	print(json_result)
-
+	return json_result
