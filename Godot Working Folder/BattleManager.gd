@@ -12,6 +12,7 @@ func Send():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	ConnectActionSignals($ActionsLayout)
+	$UnitsContainer.disableAll()
 	pass # Replace with function body.
 
 # This will lead to tightly coupled code. Need to refactor later
@@ -21,6 +22,7 @@ func ConnectActionSignals(ActionsNode):
 
 func HandleOrder():
 	print("Order Phase")
+	$UnitsContainer.enableAll()
 	pass
 
 func HandleFight():
