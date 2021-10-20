@@ -1,11 +1,20 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://UnitBase.gd" type="Script" id=1]
+[ext_resource path="res://UnitSkillGrid.gd" type="Script" id=2]
 
 [node name="UnitBase" type="TextureButton"]
 margin_right = 40.0
 margin_bottom = 40.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skills" type="GridContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
