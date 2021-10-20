@@ -1,24 +1,17 @@
 extends Button
 
-var SkillName = "skill"
+export var SkillId = 1
+export var SkillName = "Blaze"
+export var Multiplier = 1.5
+export var Type = "FIRE" # to create enum to handle this later
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.text = SkillName	
 	pass # Replace with function body.
 
+# can be refactored into simply holding the skill id, and the server or manager will get the details from the skill library
+signal SkillSelected(SkillName, Multiplier, Type, SkillId)
 
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-func SetName(name):
-	SkillName = name
-
-signal SkillPressed(id)
-
-func _on_Skill_pressed():
-	emit_signal("SkillPressed", get_instance_id())
+func _on_SkillBase_pressed():
+	emit_signal("SkillSelected", SkillName, Multiplier, Type, SkillId)
 	pass # Replace with function body.

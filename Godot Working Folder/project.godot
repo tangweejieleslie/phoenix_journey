@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="C:\\Users\\65909\\Documents\\Github\\phoenix_journey"
-run/main_scene="res://BattleManager.tscn"
+run/main_scene="res://version 1/BattleManager.tscn"
 
 [physics]
 
