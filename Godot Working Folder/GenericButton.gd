@@ -1,7 +1,7 @@
 extends Button
 
 var Name = "Unit ABC"
-
+var AdditionalSkills = ["Fireball"]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	self.text = Name

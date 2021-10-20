@@ -1,9 +1,21 @@
 extends GridContainer
 
 var Skills = ["Attack", "Defend", "Heal", "Skill Name ABC"]
-
+var AdditionalSkills = []
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
+	AddSkills(AdditionalSkills)
+	LoadSkills()
+	# Connect Unit Press Signal
+	# ConnectChild()
+	
+	pass # Replace with function body.
+
+func AddSkills(AdditionalSkillsArray):
+	pass
+
+func LoadSkills():
 	var skill = preload("res://SkillBase.tscn")
 	
 	# Instantiate units	
@@ -11,11 +23,6 @@ func _ready():
 		var NewSkill = skill.instance()
 		NewSkill.SetName(s)
 		self.add_child(NewSkill)
-	
-	# Connect Unit Press Signal
-	ConnectChild()
-	
-	pass # Replace with function body.
 
 func ConnectChild():
 	for c in get_children():
