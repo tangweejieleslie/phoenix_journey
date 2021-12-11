@@ -8,7 +8,7 @@ extends GridContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var unit = preload("res://UnitPlaceholder.tscn")
+	var unit = preload("res://version 1/UnitPlaceholder.tscn")
 	
 	# Instantiate units	
 	for n in 4:
